@@ -195,3 +195,6 @@ override.tf.json
 terraform.rc
 
 *.tfplan
+
+# Ignore .zip dirs created to load into lambda
+*.zip
