@@ -1,0 +1,1 @@
+lambda_name = "my_new_fcn_terraform"
