@@ -14,3 +14,8 @@ https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lamb
 
 - tests directory - some unit tests for json and tf files. run pytest -s in root directory.
 
+- use null resource to run commands to zip up dependencies
+
+- add trigger to pip install to only execute if the contents of requirements.txt has changed. Can do this using filemd5, the file version of md5 https://www.bitslovers.com/terraform-null-resource/
+
+- will only let you load zip archives of a certain size unless you load from s3

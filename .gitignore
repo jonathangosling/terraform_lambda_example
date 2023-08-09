@@ -1,3 +1,9 @@
+# lambda source folder (full of installed dependencies)
+lambda_src
+
+# Ignore .zip dirs created to load into lambda
+*.zip
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -197,6 +203,3 @@ override.tf.json
 terraform.rc
 
 *.tfplan
-
-# Ignore .zip dirs created to load into lambda
-*.zip

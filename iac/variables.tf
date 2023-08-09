@@ -9,10 +9,10 @@ variable "lambda_name" {
   description = "lambda name"
 }
 
-variable "lambda_source" {
+variable "src" {
   type        = string
-  default     = "../src"
-  description = "relative path for the lambda source code"
+  default     = "../lambda_src"
+  description = "path to the source code"
 }
 
 variable "app_script" {
@@ -25,4 +25,10 @@ variable "handler_function" {
   type        = string
   default     = "lambda_handler"
   description = "name of the execution function"
+}
+
+variable "s3_bucket" {
+  type        = string
+  default     = "lambda-zip-archives-terraform"
+  description = "s3 bucket to load zipped source code to"
 }

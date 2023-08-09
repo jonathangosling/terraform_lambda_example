@@ -12,3 +12,6 @@ output "public_url" {
   value       = aws_lambda_function_url.lambda_url.function_url
   description = "pubic url for invoking this lambda"
 }
+output "zip" {
+  value = data.archive_file.source.output_path
+}
