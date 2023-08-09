@@ -12,3 +12,5 @@ https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lamb
 - When you create a lambda function in the console, an execution role with permissions to upload to CloudWatch logs is created by default. In terraform, we have to do this ourselves. Need to ceate policy and attach it to the iam role: https://stackoverflow.com/questions/58285508/correct-terraform-syntax-for-adding-permissions-to-aws-lambda https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role_policy_attachment.html https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_policy
 - Add publicly accessible url. https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lambda_function_url
 
+- tests directory - some unit tests for json and tf files. run pytest -s in root directory.
+
